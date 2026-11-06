@@ -1,0 +1,17 @@
+from typing import List # used to add type hint for List
+
+def count_x(nums: List[int], x: int) -> int:
+    count_x = 0
+    for number in nums: 
+        if number == x:
+            count_x += 1
+        else:
+             count_x += 0
+    return count_x
+
+
+
+# do not modify below this line
+print(count_x([1, 2, 5, 6, 5], 5))
+print(count_x([4, 3, 6, 1, 6], 5))
+print(count_x([4, 7, 7, 6, 7, 6], 7))
